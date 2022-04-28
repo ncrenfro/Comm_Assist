@@ -1,20 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Assistant
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true"  >
+  <ion-card >
+    <ion-card-content>
+      A simple communication app for the nonverbal.
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+  <ion-card>
+    <ion-item href="https://ncrenfro.github.io/htmlPages/speech.html" class="ion-activated" color="primary">
+      <ion-icon name="book" slot="start"></ion-icon>
+      <ion-label>Text To Speech</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="ion-activated" (click)="helpAlert()" color="danger">
+      <ion-icon name="alert-outline" slot="start"></ion-icon>
+      <ion-label>Help</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="ion-activated" (click)="hurtAlert()" color="warning">
+      <ion-icon name="body" slot="start"></ion-icon>
+      <ion-label>Hurt</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="ion-activated" (click)="bathroomAlert()" color="tertiary">
+      <ion-icon name="color-fill" slot="start"></ion-icon>
+      <ion-label>Bathroom</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="ion-activated" (click)="hungryAlert()" color="tertiary">
+      <ion-icon name="fast-food" slot="start"></ion-icon>
+      <ion-label>Hungry</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item class="ion-activated" (click)="thirstyAlert()" color="tertiary">
+      <ion-icon name="pint" slot="start"></ion-icon>
+      <ion-label>Thirsty</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item class="ion-activated" (click)="tiredAlert()" color="tertiary">
+      <ion-icon name="bed" slot="start"></ion-icon>
+      <ion-label>Tired</ion-label>
+    </ion-item>
+  </ion-card>
+
+
 </ion-content>
