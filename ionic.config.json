@@ -1,0 +1,7 @@
+{
+  "name": "browser",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
