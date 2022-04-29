@@ -73,7 +73,7 @@ export class HomePage {
   hungryAlert() {
 
     this.alertController.create({
-      header: 'I am hunrgy.',
+      header: 'I am hungry.',
       buttons: ['OK']
     }).then(res => {
       res.present();
